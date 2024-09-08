@@ -56,7 +56,6 @@ $redirectPage = ($_SESSION['role'] === 'super_admin') ? 'dashboard_super_admin.p
    </div>
 
    <script>
-      // Redirect to the appropriate dashboard page after 3 seconds
       setTimeout(() => {
          window.location.href = '<?php echo $redirectPage; ?>';
       }, 3000);
