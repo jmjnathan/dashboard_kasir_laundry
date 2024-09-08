@@ -14,22 +14,22 @@
          top: 0;
          left: 0;
          bottom: 0;
-         padding-top: 4rem; /* Adjust if needed */
+         padding-top: 4rem; 
       }
       .main-content {
-         margin-left: 250px; /* Sidebar width */
+         margin-left: 250px;
          padding: 20px;
-         margin-top: 4rem; /* Adjust based on navbar height */
+         margin-top: 4rem; 
       }
       .navbar {
          position: fixed;
          top: 0;
-         left: 250px; /* Sidebar width */
+         left: 250px;
          right: 0;
          background: white;
          padding: 1rem;
          border-bottom: 1px solid #ddd;
-         z-index: 1000; /* Ensure it is above other content */
+         z-index: 1000; 
       }
       .toast {
          display: none;
@@ -84,14 +84,12 @@
 
    <script>
       document.addEventListener('DOMContentLoaded', () => {
-         // Check if the URL has the "success" query parameter
          const urlParams = new URLSearchParams(window.location.search);
          if (urlParams.has('success')) {
             const toastSuccess = document.getElementById('toast-success');
             if (toastSuccess) {
-               toastSuccess.style.display = 'block'; // Show success toast
-               setTimeout(() => toastSuccess.style.display = 'none', 3000); // Hide toast after 3 seconds
-            }
+               toastSuccess.style.display = 'block';
+               setTimeout(() => toastSuccess.style.display = 'none', 3000); 
          }
       });
    </script>
